@@ -8,29 +8,40 @@
 
 
 
-API 参数加密 发起请求时会校验附带的参数，如 token、sign等
+- API 参数加密 发起请求时会校验附带的参数，如 token、sign等
 
-Cookie 参数解密 cookie 由 JavaScript 动态生成
-
-
-
-ob 混淆：开源的混淆工具
-
-webpack： 一种打包方式
-
-worker：多线程调试
-
-async：异步调试
-
-jsl 加速乐：加速乐
-
-sojsonv6：基于 ob 混淆
+- Cookie 参数解密 cookie 由 JavaScript 动态生成
 
 
 
-hook
 
-AST
+- 加密
+
+  - ob 混淆：开源的混淆工具
+
+
+  - webpack： 一种打包方式
+
+
+  - worker：多线程调试
+
+
+  - async：异步调试
+
+
+  - jsl 加速乐：加速乐
+
+
+  - sojsonv6：基于 ob 混淆
+  - ......
+
+- 解密
+
+  - hook
+
+  - AST
+
+
 
 
 
