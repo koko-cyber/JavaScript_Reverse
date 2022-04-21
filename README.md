@@ -76,7 +76,7 @@ hi();
 
 混淆后部分截图
 
-![image](https://github.com/koko-cyber/JavaScript---/blob/main/picture/image-20220421161230992.png?raw=true)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220421205700908.png?raw=true)
 
 <br>
 
