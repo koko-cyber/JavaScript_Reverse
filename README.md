@@ -123,7 +123,7 @@ async：异步调试案例 [网易云音乐 (163.com)](https://music.163.com/)
 
 <br>
 
-!![image-20220421141420597.png](https://github.com/koko-cyber/JavaScript---/blob/main/picture/image-20220421141420597.png?raw=true)
+![image-20220421141420597.png](https://github.com/koko-cyber/JavaScript---/blob/main/picture/image-20220421141420597.png?raw=true)
 
 可以看见该 post 请求下面有两个加密参数 **params** 和 **encSecKey**
 
