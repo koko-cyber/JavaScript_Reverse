@@ -44,7 +44,9 @@ ob 混淆是常见的一种混淆方式，关于介绍可以去百度或者官�
 
 混淆前
 
-![image-20220421161133168](C:\Users\29434\AppData\Roaming\Typora\typora-user-images\image-20220421161133168.png)
+!(https://github.com/koko-cyber/JavaScript---/blob/main/picture/image-20220421161133168.png)
+
+
 
 混淆后部分截图
 
