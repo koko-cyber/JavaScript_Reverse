@@ -1,6 +1,6 @@
 # JavaScript 逆向 - 基础	
 
-😅😥👶😃🧥🐶🍏⚽️✂🈲🚗⌚️❤️🏁▶test
+😅😥👶😃🧥🐶🍏⚽️✂🈲🚗⌚️❤️🏁▶
 
 <br>
 
@@ -32,9 +32,13 @@
   
   
   - sojsonv6：基于 ob 混淆
+  - tls
+  - 瑞数
+  - 极验
+  - 5秒盾
   
   
-    ......
+   
   
 
 <br>
@@ -116,6 +120,8 @@ sojsonv6：sojsonv6调试案例 [中国人民银行 (pbc.gov.cn)](http://www.pbc
 <br>
 
 async：异步调试案例 [网易云音乐 (163.com)](https://music.163.com/)
+
+<br>
 
 网易云音乐登录（手机号-密码）：加密参数 encSecKey parmas
 
