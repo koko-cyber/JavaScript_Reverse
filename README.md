@@ -22,10 +22,10 @@
 
 - [ ] 加密
 
-  - [x] ob 混淆：开源的混淆工具
+  - [x] [ob 混淆：开源的混淆工具](https://github.com/koko-cyber/JavaScript_Reverse#ob-%E6%B7%B7%E6%B7%86%E7%AF%87)
 
 
-  - [x] webpack： 一种打包方式
+  - [x] [webpack： 一种打包方式](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
 
 
   - [ ] worker：多线程调试
@@ -220,7 +220,7 @@ window._0x3ff111\_ = _0x3ff111;  //将分发器导出
 
 ![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422152615458.png?raw=true)
 
-
+<br>
 
 也可以直接全部复制下来，建议用到什么模块就扣什么模块。我偷个懒
 
