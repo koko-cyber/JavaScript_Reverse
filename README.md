@@ -42,6 +42,7 @@
   - [ ] 瑞数
   - [ ] 极验
   - [ ] 5秒盾
+  - [ ] 字体反爬
 
   
 
@@ -344,7 +345,19 @@ async：异步调试案例 aHR0cHM6Ly9tdXNpYy4xNjMuY29tLw==
 
 ![image](https://github.com/koko-cyber/JavaScript---/blob/main/picture/image-20220421151704924.png?raw=true)
 
-知道所有参数的加密方式后就可以扣 JS 代码，或者直接用 Python 还原加密算法
+
+
+## TLS
+
+
+
+什么是 TLS 
+
+
+
+
+
+
 
 
 
