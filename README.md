@@ -138,15 +138,105 @@ arg2 由 _0x23a392 得来，arg1 参数是由服务器发的固定字符串
 
 <br>
 
+webpack 是前端打包常用手段，并不是加密手段，只是经过 webpack 打包的 js 对逆向有一定的影响
 
+中文官网：[概念 | webpack 中文网 (webpackjs.com)](https://www.webpackjs.com/concepts/)
 
+<br>
 
+<br>
+
+webpack 标识
+
+```javascript
+
+!(function(e) {
+    //分发器
+    function u(n) {
+        .....
+        return e[n].call(t.exports, t, t.exports, u),
+        t.l = !0,
+        t.exports
+}({
+// 模块
+'test': function(){},
+
+}));
+```
+
+<br>
+
+经过 webpack 打包的代码一般长这样，由分发器和待加载的模块组成
+
+![image-20220422150332156](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422150332156.png)
+
+<br>
+
+<br>
 
 案例网址：[Scrape | Movie](https://spa6.scrape.center/)
 
 通过抓包发现，数据接口由 token 值是经过加密的
 
 <br>
+
+经过查找堆栈可以发现加密函数入口，我们在此处下断点刷新页面，断住后单步调试跟进去
+
+![image-20220422151257413](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422151257413.png)
+
+
+
+<br>
+
+跟进去后我们就可以找到该分发器，然后将该分发器导出方便我们使用里面的模块
+
+![image-20220422151429261](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422151429261.png)
+
+扣下来，将其他无用的函数注释掉，定义一个 window（当然什么变量都行只是我习惯了）
+
+var window = global;
+
+window._0x3ff111\_ = _0x3ff111;  //将分发器导出
+
+<br>
+
+![image-20220422151555774](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422151555774.png)
+
+<br>
+
+扣完后可以测试一下该分发器有没有效果
+
+![image-20220422153622477](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422153622477.png)
+
+<br>
+
+接下来就是扣加密所需的模块了
+
+比如在控制台输出 _0x2fa7bd['a'] 发现是这个函数，它所在的模块是 ‘7d92’
+
+![image-20220422152051489](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422152051489.png)
+
+将他整个扣下来，缺什么模块就扣什么
+
+![image-20220422152615458](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422152615458.png)
+
+
+
+也可以直接全部复制下来，建议用到什么模块就扣什么模块。我偷个懒
+
+![image-20220422153847349](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422153847349.png)
+
+<br>
+
+调用模块还原加密逻辑
+
+_0x2fa7bd 是由 "7d92" 模块加载来的
+
+![image-20220422154051923](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422154051923.png)
+
+
+
+
 
 ## worker 多线程调试篇
 
