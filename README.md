@@ -6,9 +6,9 @@
 
 ！！！ 如有侵权请联系，本人会在第一时间删除，本文以学习为目的，切勿用于非法途径🈲
 
-[TOC]
 
-<br>
+
+
 
 ## 常见加密、解密、调试手段
 
@@ -146,8 +146,6 @@ webpack 是前端打包常用手段，并不是加密手段，只是经过 webpa
 
 <br>
 
-<br>
-
 webpack 标识
 
 ```javascript
@@ -170,7 +168,7 @@ webpack 标识
 
 经过 webpack 打包的代码一般长这样，由分发器和待加载的模块组成
 
-![image-20220422150332156](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422150332156.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422150332156.png?raw=true)
 
 <br>
 
@@ -184,7 +182,7 @@ webpack 标识
 
 经过查找堆栈可以发现加密函数入口，我们在此处下断点刷新页面，断住后单步调试跟进去
 
-![image-20220422151257413](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422151257413.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422151257413.png?raw=true)
 
 
 
@@ -192,7 +190,7 @@ webpack 标识
 
 跟进去后我们就可以找到该分发器，然后将该分发器导出方便我们使用里面的模块
 
-![image-20220422151429261](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422151429261.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422151429261.png?raw=true)
 
 扣下来，将其他无用的函数注释掉，定义一个 window（当然什么变量都行只是我习惯了）
 
@@ -202,13 +200,13 @@ window._0x3ff111\_ = _0x3ff111;  //将分发器导出
 
 <br>
 
-![image-20220422151555774](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422151555774.png)
+![image-20220422151555774](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422151555774.png?raw=true)
 
 <br>
 
 扣完后可以测试一下该分发器有没有效果
 
-![image-20220422153622477](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422153622477.png)
+![image-20220422153622477](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422153622477.png?raw=true)
 
 <br>
 
@@ -216,17 +214,17 @@ window._0x3ff111\_ = _0x3ff111;  //将分发器导出
 
 比如在控制台输出 _0x2fa7bd['a'] 发现是这个函数，它所在的模块是 ‘7d92’
 
-![image-20220422152051489](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422152051489.png)
+![image-20220422152051489](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422152051489.png?raw=true)
 
 将他整个扣下来，缺什么模块就扣什么
 
-![image-20220422152615458](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422152615458.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422152615458.png?raw=true)
 
 
 
 也可以直接全部复制下来，建议用到什么模块就扣什么模块。我偷个懒
 
-![image-20220422153847349](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422153847349.png)
+![image-20220422153847349](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422153847349.png?raw=true)
 
 <br>
 
@@ -234,7 +232,7 @@ window._0x3ff111\_ = _0x3ff111;  //将分发器导出
 
 _0x2fa7bd 是由 "7d92" 模块加载来的
 
-![image-20220422154051923](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422154051923.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422154051923.png?raw=true)
 
 
 
