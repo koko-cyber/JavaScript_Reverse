@@ -98,9 +98,9 @@ ob混淆案例网址：aHR0cHM6Ly9qb2JzLjUxam9iLmNvbS8=
 
 此网址的 cookie 设置了有效时间，打上 script 断点后很容易找到生成 cookie 的函数入口
 
-![image-20220422141408444](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422141408444.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422141408444.png?raw=true)
 
-![image-20220422141952842](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422141952842.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422141952842.png?raw=true)
 
 <br>
 
@@ -108,13 +108,13 @@ ob混淆案例网址：aHR0cHM6Ly9qb2JzLjUxam9iLmNvbS8=
 
 arg2 由 _0x23a392 得来，arg1 参数是由服务器发的固定字符串
 
-![image-20220422142442341](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422142442341.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422142442341.png?raw=true)
 
 <br>
 
 为了方便我们看代码我们可以利用 decodeObfuscator 解混淆，解混淆前后
 
-![image-20220422142832558](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422142832558.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422142832558.png?raw=true)
 
 
 
@@ -122,13 +122,13 @@ arg2 由 _0x23a392 得来，arg1 参数是由服务器发的固定字符串
 
 我们可以更清楚的去分析函数之间的关系
 
-![image-20220422142955089](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422142955089.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422142955089.png?raw=true)
 
 <br>
 
 分析结束后就是扣代码的流程了，这里就不多赘述了，直接贴上运行结果
 
-![image-20220422143355073](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220422143355073.png)
+![image](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220422143355073.png?raw=true)
 
 <br>
 
