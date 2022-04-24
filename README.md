@@ -23,29 +23,40 @@
 - [ ] 加密
 
   - [x] [ob 混淆：开源的混淆工具](https://github.com/koko-cyber/JavaScript_Reverse#ob-%E6%B7%B7%E6%B7%86%E7%AF%87)
-
-
-  - [x] [webpack： 一种打包方式](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
-
-
-  - [ ] worker：多线程调试
-
-
-  - [ ] async：异步调试
-
-
-  - [ ] jsl 加速乐：加速乐
-
-
-  - [ ] sojsonv6：基于 ob 混淆
-  - [ ] tls
-  - [ ] 瑞数
-  - [ ] 极验
-  - [ ] 5秒盾
-  - [ ] 字体反爬
-
   
-
+  
+    - [x] [webpack： 一种打包方式](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
+  
+  
+    - [ ] worker：多线程调试
+  
+  
+    - [ ] async：异步调试
+  
+  
+    - [ ] jsl 加速乐：加速乐
+  
+  
+    - [ ] sojsonv6：基于 ob 混淆
+  
+  
+    - [ ] [tls指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls)
+  
+  
+    - [ ] 瑞数
+  
+  
+    - [ ] 极验
+  
+  
+    - [ ] 5秒盾
+  
+  
+    - [ ] 字体反爬
+  
+  
+  
+  
   
 
 <br>
@@ -195,9 +206,11 @@ webpack 标识
 
 扣下来，将其他无用的函数注释掉，定义一个 window（当然什么变量都行只是我习惯了）
 
+```javascript
 var window = global;
 
 window._0x3ff111\_ = _0x3ff111;  //将分发器导出
+```
 
 <br>
 
@@ -347,17 +360,32 @@ async：异步调试案例 aHR0cHM6Ly9tdXNpYy4xNjMuY29tLw==
 
 
 
-## TLS
+## TLS 指纹
 
 
 
-什么是 TLS 
+TLS 指纹又叫 SSl 指纹，或者 JA3 指纹，是根据客户端向服务端发送的 `Client Hello` 计算得到
+
+在TLS握手中还有服务端响应的`Server Hello`，也有特征，可以得到JA3S指纹
+
+又由于服务端会根据不同的`Client Hello`响应不同的`Server Hello`，根据这个又可以得到JARM指纹
+
+<br>
+
+简单来说
+
+> JA3是标记客户端的指纹
+>
+> JA3S是标记服务端的指纹
+>
+> JARM是升级版的JA3S指纹
 
 
 
+ja3：[JA3 is a standard for creating SSL client fingerprints in an easy to produce and shareable way](https://github.com/salesforce/ja3)
+
+[TLS Fingerprinting with JA3 and JA3S | by John Althouse | Salesforce Engineering](https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967)
 
 
 
-
-
-
+推荐文章：[深度剖析ja3指纹及突破 (qq.com)](https://mp.weixin.qq.com/s/-i730kN_f5sIvh6kj7k5JQ)
