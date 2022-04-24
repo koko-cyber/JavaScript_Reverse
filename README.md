@@ -40,7 +40,7 @@
   - [ ] sojsonv6：基于 ob 混淆
   
   
-  - [ ] [tls指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
+  - [ ] [TLS 指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
   
   
   - [ ] 瑞数
@@ -362,23 +362,37 @@ async：异步调试案例 aHR0cHM6Ly9tdXNpYy4xNjMuY29tLw==
 
 ## TLS 指纹
 
+<br>
+
+TLS 及其前身 SSL 用于为常见应用程序和恶意软件加密通信，以确保数据安全，因此可以隐藏在噪音中。要启动 
+
+TLS 会话，客户端将在 TCP 3 次握手之后发送 TLS 客户端 Hello 数据包。此数据包及其生成方式取决于构建客户
+
+端应用程序时使用的包和方法。服务器如果接受 TLS 连接，将使用基于服务器端库和配置以及 Client Hello 中的详
+
+细信息制定的 TLS Server Hello 数据包进行响应。由于 TLS 协商以明文形式传输，因此可以使用 TLS Client Hello 
+
+数据包中的详细信息来指纹和识别客户端应用程序
 
 
-TLS 指纹又叫 SSl 指纹，或者 JA3 指纹，是根据客户端向服务端发送的 `Client Hello` 计算得到
 
-在TLS握手中还有服务端响应的`Server Hello`，也有特征，可以得到JA3S指纹
 
-又由于服务端会根据不同的`Client Hello`响应不同的`Server Hello`，根据这个又可以得到JARM指纹
+
+// TLS 指纹又叫 SSl 指纹，或者 JA3 指纹，是根据客户端向服务端发送的 `Client Hello` 计算得到
+
+// 在TLS握手中还有服务端响应的`Server Hello`，也有特征，可以得到JA3S指纹
+
+// 又由于服务端会根据不同的`Client Hello`响应不同的`Server Hello`，根据这个又可以得到JARM指纹
 
 <br>
 
-简单来说
+// 简单来说
 
-> JA3是标记客户端的指纹
+> // JA3是标记客户端的指纹
 >
-> JA3S是标记服务端的指纹
+> // JA3S是标记服务端的指纹
 >
-> JARM是升级版的JA3S指纹
+> // JARM是升级版的JA3S指纹
 
 <br>
 
