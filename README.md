@@ -382,4 +382,9 @@ ja3：[JA3 is a standard for creating SSL client fingerprints in an easy to prod
 
 <br>
 
-推荐文章：[深度剖析ja3指纹及突破 (qq.com)](https://mp.weixin.qq.com/s/-i730kN_f5sIvh6kj7k5JQ)
+推荐文章：[深度剖析ja3指纹及突破](https://mp.weixin.qq.com/s/-i730kN_f5sIvh6kj7k5JQ)  大佬文章里说的很详细
+
+[ja3指纹补充说明](https://mp.weixin.qq.com/s/oHAaCICxUAAxKsT4tul5Sw)
+
+
+
