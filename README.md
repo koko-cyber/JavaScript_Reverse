@@ -40,7 +40,7 @@
   - [ ] sojsonv6：基于 ob 混淆
   
   
-  - [ ] [TLS 指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
+  - [x] [TLS 指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
   
   
   - [ ] 瑞数
