@@ -374,26 +374,6 @@ TLS 会话，客户端将在 TCP 3 次握手之后发送 TLS 客户端 Hello 数
 
 数据包中的详细信息来指纹和识别客户端应用程序
 
-
-
-
-
-// TLS 指纹又叫 SSl 指纹，或者 JA3 指纹，是根据客户端向服务端发送的 `Client Hello` 计算得到
-
-// 在TLS握手中还有服务端响应的`Server Hello`，也有特征，可以得到JA3S指纹
-
-// 又由于服务端会根据不同的`Client Hello`响应不同的`Server Hello`，根据这个又可以得到JARM指纹
-
-<br>
-
-// 简单来说
-
-> // JA3是标记客户端的指纹
->
-> // JA3S是标记服务端的指纹
->
-> // JARM是升级版的JA3S指纹
-
 <br>
 
 ja3：[JA3 is a standard for creating SSL client fingerprints in an easy to produce and shareable way](https://github.com/salesforce/ja3)
