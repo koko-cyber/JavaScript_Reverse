@@ -25,34 +25,34 @@
   - [x] [ob 混淆：开源的混淆工具](https://github.com/koko-cyber/JavaScript_Reverse#ob-%E6%B7%B7%E6%B7%86%E7%AF%87)
   
   
-    - [x] [webpack： 一种打包方式](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
+  - [x] [webpack： 一种打包方式](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
   
   
-    - [ ] worker：多线程调试
+  - [ ] worker：多线程调试
   
   
-    - [ ] async：异步调试
+  - [ ] async：异步调试
   
   
-    - [ ] jsl 加速乐：加速乐
+  - [ ] jsl 加速乐：加速乐
   
   
-    - [ ] sojsonv6：基于 ob 混淆
+  - [ ] sojsonv6：基于 ob 混淆
   
   
-    - [ ] [tls指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls)
+  - [ ] [tls指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
   
   
-    - [ ] 瑞数
+  - [ ] 瑞数
   
   
-    - [ ] 极验
+  - [ ] 极验
   
   
-    - [ ] 5秒盾
+  - [ ] 5秒盾
   
   
-    - [ ] 字体反爬
+  - [ ] 字体反爬
   
   
   
@@ -380,12 +380,12 @@ TLS 指纹又叫 SSl 指纹，或者 JA3 指纹，是根据客户端向服务端
 >
 > JARM是升级版的JA3S指纹
 
-
+<br>
 
 ja3：[JA3 is a standard for creating SSL client fingerprints in an easy to produce and shareable way](https://github.com/salesforce/ja3)
 
 [TLS Fingerprinting with JA3 and JA3S | by John Althouse | Salesforce Engineering](https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967)
 
-
+<br>
 
 推荐文章：[深度剖析ja3指纹及突破 (qq.com)](https://mp.weixin.qq.com/s/-i730kN_f5sIvh6kj7k5JQ)
