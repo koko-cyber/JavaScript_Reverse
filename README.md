@@ -31,7 +31,7 @@
   - [ ] worker：多线程调试
   
   
-  - [ ] async：异步调试
+  - [x] [async：异步调试](https://github.com/koko-cyber/JavaScript_Reverse#async-%E5%BC%82%E6%AD%A5%E7%AF%87)
   
   
   - [ ] jsl 加速乐：加速乐
@@ -209,7 +209,7 @@ webpack 标识
 ```javascript
 var window = global;
 
-window._0x3ff111\_ = _0x3ff111;  //将分发器导出
+window._0x3ff111_ = _0x3ff111;  //将分发器导出
 ```
 
 <br>
