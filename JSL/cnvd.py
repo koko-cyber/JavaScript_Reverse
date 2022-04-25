@@ -35,11 +35,11 @@ js = resp.text
 obj = re.findall(r';go\((.*?)\)', js, re.S)[0]
 
 if 'md5' in obj:
-  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie_md5.js'
+  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie\\cookie_md5.js'
 elif 'sha1' in obj:
-  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie_sha1.js'
+  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie\\cookie_sha1.js'
 else:
-  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie_sha256.js'
+  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie\\cookie_sha256.js'
 
 with open(f'{path}', 'r', encoding='utf-8') as f:
     cookie_js = f.read()
