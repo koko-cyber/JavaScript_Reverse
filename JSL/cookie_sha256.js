@@ -1,15 +1,15 @@
-var _0x45f37e = {
-    "bts": ["1650879106.272|0|F2P", "oD9U3aYzgodNJhzhUjwZdM%3D"],
-    "chars": "CcQzOLSUEgzhedEkFEyETg",
-    "ct": "f692452b5f5f49292c13bded7b7e7a9797db25c479e74ca48a52edf6732deabe",
-    "ha": "sha256",
-    "tn": "__jsl_clearance_s",
-    "vt": "3600",
-    "wt": "1500"
-}
+// var _0x45f37e = {
+//     "bts": ["1650879106.272|0|F2P", "oD9U3aYzgodNJhzhUjwZdM%3D"],
+//     "chars": "CcQzOLSUEgzhedEkFEyETg",
+//     "ct": "f692452b5f5f49292c13bded7b7e7a9797db25c479e74ca48a52edf6732deabe",
+//     "ha": "sha256",
+//     "tn": "__jsl_clearance_s",
+//     "vt": "3600",
+//     "wt": "1500"
+// }
 
 
-function cookie(){
+function cookie(_0x45f37e){
     var _0x3e5c07 = new Date();
 
     function hash(_0x2644ea) {
@@ -183,4 +183,4 @@ function cookie(){
     const cookie = _0x45f37e['tn'] + '=' + _0x1ec7b1[0] + ";Max-age=" + _0x45f37e['vt'] + "; path = /";
     return cookie
 }
-console.log(cookie);
+// console.log(cookie);

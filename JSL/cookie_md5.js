@@ -1,14 +1,14 @@
-const _0x4ed943 = {
-    "bts": ["1650856033.584|0|afG", "83DOA1w3SAynJ6CiqMGA7U%3D"],
-    "chars": "wyenUjMhgjIarYYHGsTdTL",
-    "ct": "eeb0d288d879a9f74d37ba1d158a120265ce2a0b",
-    "ha": "sha1",
-    "tn": "__jsl_clearance_s",
-    "vt": "3600",
-    "wt": "1500"
-}
+// const _0x4ed943 = {
+//     "bts": ["1650856033.584|0|afG", "83DOA1w3SAynJ6CiqMGA7U%3D"],
+//     "chars": "wyenUjMhgjIarYYHGsTdTL",
+//     "ct": "eeb0d288d879a9f74d37ba1d158a120265ce2a0b",
+//     "ha": "sha1",
+//     "tn": "__jsl_clearance_s",
+//     "vt": "3600",
+//     "wt": "1500"
+// }
 
-function cookie(){
+function cookie(_0x4ed943){
   function hash(_0x597daa) {
       function _0xe8f1f9(_0xb07635, _0x520b99) {
         return (_0xb07635 & 2147483647) + (_0x520b99 & 2147483647) ^ _0xb07635 & 2147483648 ^ _0x520b99 & 2147483648;
@@ -136,4 +136,4 @@ function cookie(){
 }
 
 
-console.log(cookie);
+// console.log(cookie);

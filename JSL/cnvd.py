@@ -34,17 +34,23 @@ js = resp.text
 
 obj = re.findall(r';go\((.*?)\)', js, re.S)[0]
 
+if 'md5' in obj:
+  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie_md5.js'
+elif 'sha1' in obj:
+  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie_sha1.js'
+else:
+  path = 'D:\\notes\\study\\JS逆向\\JavaScript_Reverse\\JSL\\cookie_sha256.js'
 
-with open(r'C:\\Users\29434\Desktop\\js逆向\\JavaScript_Reverse\\JSL\\cookie.js', 'r', encoding='utf-8') as f:
+with open(f'{path}', 'r', encoding='utf-8') as f:
     cookie_js = f.read()
     # print(cookie_js)
     ctx = execjs.compile(cookie_js)
     jsl_cookie = ctx.call("cookie", json.loads(obj))
-    print(jsl_cookie)
 
-# jsl_cookies = re.split(r'=|;', jsl_cookie)
+jsl_cookies = re.split(r'=|;', jsl_cookie)
 
-# session.cookies.set(jsl_cookies[0], jsl_cookies[1])
+session.cookies.set(jsl_cookies[0], jsl_cookies[1])
 
-# res = session.get(url=url)
-# print(res.text)
+res = session.get(url=url)
+
+print(res.text)
