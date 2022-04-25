@@ -34,7 +34,7 @@
   - [x] [async：异步调试](https://github.com/koko-cyber/JavaScript_Reverse#async-%E5%BC%82%E6%AD%A5%E7%AF%87)
   
   
-  - [ ] jsl 加速乐：加速乐
+  - [x] [jsl 加速乐：加速乐](https://github.com/koko-cyber/JavaScript_Reverse#jsl-%E5%8A%A0%E9%80%9F%E4%B9%90%E7%AF%87)
   
   
   - [ ] sojsonv6：基于 ob 混淆
@@ -258,7 +258,7 @@ _0x2fa7bd 是由 "7d92" 模块加载来的
 
 <br>
 
-## Jsl 加速乐篇
+## JSL 加速乐篇
 
 <br>
 
