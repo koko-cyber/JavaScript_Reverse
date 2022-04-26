@@ -262,6 +262,48 @@ _0x2fa7bd 是由 "7d92" 模块加载来的
 
 <br>
 
+案例网址：[国家信息安全漏洞共享平台](https://www.cnvd.org.cn/)
+
+<br>
+
+老规矩先抓包，看一下它是怎么一个操作
+
+![image-20220426095248452](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426095248452.png)
+
+
+
+可以看到他是发送了三次请求才返回正常的页面，第一次请求 Set-Cookie: \__jsluid_s ，经过第一次请求后，第二次请求带着第一次请求的 set-cookie 和加密出来的 _\_jsl_clearance_s 发送请求，最后一次请求带着再一次加密过后的 __jsl_clearance_s 返回要采集的数据
+
+![image-20220426095820587](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426095820587.png)
+
+![image-20220426095744498](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426095744498.png)
+
+
+
+ok，我们打上 script 断点然后刷新页面
+
+可以看见第一次请求 set-cookie 后会返回这一串 js 代码，发现这就是我们要找的 _\_jsl_clearance_s
+
+
+
+![image-20220426100845761](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426100845761.png)
+
+
+
+我们继续步进，发现第二次 _\_jsl_clearance_s 的加密逻辑，这是一个经过 ob 混淆的加密代码，我们可以通过hook 或者解混淆来找到入口函数，由于这个混淆度比较低直接就能看出来set cookie 的位置
+
+![image-20220426101226400](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426101226400.png)
+
+
+
+![image-20220426101305880](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426101305880.png)
+
+
+
+多调试几次就会发现它每次加密 _\_jsl_clearance_s 的加密算法不同，分别是 sha1 sha256 md5，需要把这三个文件抓出来，然后就可以进行扣代码了
+
+![image-20220426101615392](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426101615392.png)
+
 <br>
 
 ## sojson 篇
