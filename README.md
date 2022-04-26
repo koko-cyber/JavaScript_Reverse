@@ -63,7 +63,7 @@
 
 - [ ] 解密
 
-  - [ ] hook
+  - [ ] [hook](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/hook.md)
 
   - [ ] AST
 
@@ -316,19 +316,19 @@ sojsonv6：sojsonv6调试案例 [中国人民银行](http://www.pbc.gov.cn/)
 
 通过第一次请求 set_cookie 了一个 **wzws_cid**，返回一串经过 sojsonv6 加密的 js 
 
-![image-20220426103746779](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426103746779.png)
+![image-20220426103746779](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220426103746779.png?raw=true)
 
 
 
 然后经过加密后带上 wzwschallenge 参数和 wzws_cid 这个cookie 在请求一次，然后又 set_cookie 了 wzws_cid
 
-![image-20220426104205009](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426104205009.png)
+![image-20220426104205009](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220426104205009.png?raw=true)
 
 
 
 把 cookie 清空打上 script 断点，可以发现有这个明显的特征，这个文件就是加密 wzwschallenge 的文件
 
-![image-20220426102834476](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426102834476.png)
+![image-20220426102834476](https://github.com/koko-cyber/JavaScript_Reverse/blob/main/picture/image-20220426102834476.png?raw=true)
 
 <br>
 
