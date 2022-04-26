@@ -28,16 +28,16 @@
   - [x] [webpack： 一种打包方式](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
   
   
-  - [ ] worker：多线程调试
+  - [ ] worker
   
   
   - [x] [async：异步调试](https://github.com/koko-cyber/JavaScript_Reverse#async-%E5%BC%82%E6%AD%A5%E7%AF%87)
   
   
-  - [x] [jsl 加速乐：加速乐](https://github.com/koko-cyber/JavaScript_Reverse#jsl-%E5%8A%A0%E9%80%9F%E4%B9%90%E7%AF%87)
+  - [x] [jsl 加速乐](https://github.com/koko-cyber/JavaScript_Reverse#jsl-%E5%8A%A0%E9%80%9F%E4%B9%90%E7%AF%87)
   
   
-  - [ ] sojsonv6：基于 ob 混淆
+  - [ ] [sojsonv6](https://github.com/koko-cyber/JavaScript_Reverse#sojson-%E7%AF%87)
   
   
   - [x] [TLS 指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
@@ -308,11 +308,33 @@ ok，我们打上 script 断点然后刷新页面
 
 <br>
 
-sojsonv6：sojsonv6调试案例 aHR0cDovL3d3dy5wYmMuZ292LmNuLw==
+sojsonv6 加密网址：https://www.jsjiami.com/
+
+sojsonv6：sojsonv6调试案例 [中国人民银行](http://www.pbc.gov.cn/)
 
 <br>
 
+通过第一次请求 set_cookie 了一个 **wzws_cid**，返回一串经过 sojsonv6 加密的 js 
+
+![image-20220426103746779](C:\Users\29434\AppData\Roaming\Typora\typora-user-images\image-20220426103746779.png)
+
+
+
+然后经过加密后带上 wzwschallenge 参数和 wzws_cid 这个cookie 在请求一次，然后又 set_cookie 了 wzws_cid
+
+![image-20220426104205009](C:\Users\29434\AppData\Roaming\Typora\typora-user-images\image-20220426104205009.png)
+
+
+
+把 cookie 清空打上 script 断点，可以发现有这个明显的特征，这个文件就是加密 wzwschallenge 的文件
+
+![image-20220426102834476](C:\Users\29434\AppData\Roaming\Typora\typora-user-images\image-20220426102834476.png)
+
 <br>
+
+
+
+
 
 ## async 异步篇
 
