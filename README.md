@@ -1,4 +1,4 @@
-# JavaScript 逆向 - 基础	
+# JavaScript 逆向	
 
 😅😥👶😃🧥🐶🍏⚽️✂🈲🚗⌚️❤️🏁▶
 
@@ -108,7 +108,7 @@ hi();
 
 <br>
 
-ob混淆案例网址：aHR0cHM6Ly9qb2JzLjUxam9iLmNvbS8=
+ob混淆案例网址：[51job、前程无忧](https://jobs.51job.com/)
 
 此网址的 cookie 设置了有效时间，打上 script 断点后很容易找到生成 cookie 的函数入口
 
@@ -316,19 +316,19 @@ sojsonv6：sojsonv6调试案例 [中国人民银行](http://www.pbc.gov.cn/)
 
 通过第一次请求 set_cookie 了一个 **wzws_cid**，返回一串经过 sojsonv6 加密的 js 
 
-![image-20220426103746779](C:\Users\29434\AppData\Roaming\Typora\typora-user-images\image-20220426103746779.png)
+![image-20220426103746779](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426103746779.png)
 
 
 
 然后经过加密后带上 wzwschallenge 参数和 wzws_cid 这个cookie 在请求一次，然后又 set_cookie 了 wzws_cid
 
-![image-20220426104205009](C:\Users\29434\AppData\Roaming\Typora\typora-user-images\image-20220426104205009.png)
+![image-20220426104205009](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426104205009.png)
 
 
 
 把 cookie 清空打上 script 断点，可以发现有这个明显的特征，这个文件就是加密 wzwschallenge 的文件
 
-![image-20220426102834476](C:\Users\29434\AppData\Roaming\Typora\typora-user-images\image-20220426102834476.png)
+![image-20220426102834476](C:\Users\29434\Desktop\js逆向\JavaScript_Reverse\picture\image-20220426102834476.png)
 
 <br>
 
@@ -447,6 +447,8 @@ ja3：[JA3 is a standard for creating SSL client fingerprints in an easy to prod
 推荐文章：[深度剖析ja3指纹及突破](https://mp.weixin.qq.com/s/-i730kN_f5sIvh6kj7k5JQ)  大佬文章里说的很详细
 
 [ja3指纹补充说明](https://mp.weixin.qq.com/s/oHAaCICxUAAxKsT4tul5Sw)
+
+ 
 
 
 
