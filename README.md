@@ -38,10 +38,11 @@
   
   - [x] [TLS 指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
   - [ ] jsvmp
+  - [ ] wasm
   
   
   - [ ] 瑞数
-  - [ ] 验证码识别
+  - [ ] 文字验证码
   - [ ] 顶象
   
   
@@ -51,6 +52,7 @@
   
   
   - [ ] 5秒盾
+  - [ ] akamai
   - [ ] 谷歌验证码
   
   
