@@ -18,10 +18,10 @@
 
 - [ ] 加密
 
-  - [x] [ob 混淆：开源的混淆工具](https://github.com/koko-cyber/JavaScript_Reverse#ob-%E6%B7%B7%E6%B7%86%E7%AF%87)
+  - [x] [ob 混淆](https://github.com/koko-cyber/JavaScript_Reverse#ob-%E6%B7%B7%E6%B7%86%E7%AF%87)
   
   
-  - [x] [webpack： 一种打包方式](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
+  - [x] [webpack](https://github.com/koko-cyber/JavaScript_Reverse#webpack-%E7%AF%87)
   
   
   - [ ] worker
@@ -37,6 +37,7 @@
   
   
   - [x] [TLS 指纹](https://github.com/koko-cyber/JavaScript_Reverse#tls-%E6%8C%87%E7%BA%B9)
+  - [ ] protobuf
   - [ ] jsvmp
   - [ ] wasm
   
